@@ -1,0 +1,43 @@
+#rainbowCanvas-container{
+	width: 100%;
+	height: 100%;
+	padding-top: 50px;
+	position: absolute;
+	font-family: verdana;
+}
+.canvas-controls{
+	margin-top: -50px;
+}
+.canvas-btn{
+	appearance: none;
+	-webkit-appearance: none;
+	width: auto;
+	height: 40px;
+	background: #2AA275;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+.canvas-btn:active{
+	color: #2AA275;
+	background: none;
+	border: none;
+}
+.canvas-btn:focus{
+	border: none;
+	outline: none;
+}
+.canvas-input{
+	height: 40px;
+}
+h4{
+	font-weight: 300;
+	margin: 5px;
+	font-size: 14px;
+}
+#rainbowCanvas{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: none;
+}

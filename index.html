@@ -1,0 +1,66 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/style/style.css">
+</head>
+<body>
+	<div id="rainbowCanvas-container">
+		<div class="canvas-controls">
+			<button class="canvas-btn">Clear the Page</button>
+			<button class="canvas-btn">Set Rainbow size</button>
+			<input class="canvas-input" value=100></input>
+		</div>
+		<h4> Click anywhere to draw a rainbow! </h4>
+		<canvas id="rainbowCanvas"></canvas>
+	</div>
+<script src="/js/rainbowOverlay.js" type="text/javascript" async defer></script>
+<script type="text/javascript" charset="utf-8" async defer>
+	document.addEventListener("DOMContentLoaded", function(event) { 
+	  //do work
+	  var rainbow = new rainbowOverlay();
+    	rainbow.init();
+	});
+
+	/*
+	did not finish
+    rand = function(a,b){return ~~((Math.random()*(b-a+1))+a);},
+    createParticles = function(xVal, yVal, radius, thickness, particles, particleMax){
+      if(particles.length < particleMax){
+        particles.push({
+          x: xVal,
+          y: yVal,
+          vx: rand(0, 100),
+          vy: rand(0, 100),
+          radius: rand(1, 6),
+          alpha: rand(10, 20)/100
+        });
+      }
+      return particles;
+    };
+    updateParticles = function(particles){
+      var i = particles.length;
+      while(i--){
+      	var p = particles[i];
+        p.vx += rand(0, 1)/ 1000;
+        p.vy += rand(0, 1)/ 1000;
+        p.x += p.vx;
+        p.y += p.vy;
+        p.alpha -= .01;
+        
+        if(p.alpha < .02){
+          particles.splice(i, 1)
+        }
+      }
+    };
+    renderParticles = function(particles, ctx){
+      var i = particles.length;
+      while(i--){
+      	var p = particles[i];
+        ctx.beginPath();
+        ctx.fillRect(p.x/ 10, p.y/10, p.radius, p.radius);
+        ctx.closePath();
+        ctx.fillStyle = 'hsla(0, 0%, 100%, '+p.alpha+')';
+      }
+    };*/
+</script>
+</body>
+</html>
